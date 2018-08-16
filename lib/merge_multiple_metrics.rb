@@ -9,6 +9,7 @@ def header
   [
     "workflow_id",
     "workflow_name",
+    "read_layout",
     "workflow_total_duration",
     "download_duration",
     "processing_duration",
@@ -32,9 +33,17 @@ if __FILE__ == $0
 
   workflow_metrics = list_json.flatten.map do |wf|
     id = wf["workflow_id"]
-    name = wf["workflow_name"]
     duration = wf["workflow_elapsed_sec"]
     instance_type = wf["platform"]["instance_type"]
+
+    name_org = wf["workflow_name"]
+    name = name_org.gsub(/_wf.+$/,"")
+    layout = case name_org.gsub(/^.+_wf_/,"").gsub(/\.cwl$/,"")
+             when "pe"
+               "PAIRED"
+             when "se"
+               "SINGLE"
+             end
 
     status = []
     inputs = []
@@ -64,6 +73,7 @@ if __FILE__ == $0
     [
       id[0..6],
       name,
+      layout,
       duration,
       download_duration,
       duration - download_duration,
