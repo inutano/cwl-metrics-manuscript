@@ -1,8 +1,8 @@
-# CWL-metrics code for manuscript
+# Code for CWL-metrics manuscript
 
-This repo contains:
+This repository contains:
 
-- Status check script for multi host workflow runs (lib/check_status.sh)
+- Status check script for cwltool runs on multiple EC2 instances (lib/check_status.sh)
 - Script to merge multiple CWL-metrics JSON data (lib/merge_multiple_metrics.rb)
 - Jupyter notebook for data analysis and plot (notebook)
 
