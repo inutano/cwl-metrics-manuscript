@@ -12,7 +12,8 @@ This repository contains:
 
 ## Reproduce analysis
 
-1. Run `init.sh` to launch Jupyter notebook docker container
-2. Open the URL shown on terminal
-3. Open the notebook at `/work/notebook/CWL-metrics runtime metrics analysis.ipynb`
-3. Push Play!
+1. Open the terminal app and `git clone https://github.com/inutano/cwl-metrics-manuscript` to clone this repo
+2. Run `init.sh` to launch Jupyter notebook docker container
+3. Open the URL shown on terminal
+4. Open the notebook at `/work/notebook/CWL-metrics runtime metrics analysis.ipynb`
+5. Push Play!
