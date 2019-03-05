@@ -8,6 +8,17 @@ This repository contains:
 - Script to merge multiple CWL-metrics JSON data (lib/merge_multiple_metrics.rb)
 - Jupyter notebook for data analysis and plot (notebook)
 
+## Related repositories
+
+- [common-workflow-language/common-workflow-language](https://github.com/common-workflow-language/common-workflow-language)
+  - Used to describe workflows
+- [common-workflow-language/cwltool](https://github.com/common-workflow-language/cwltool/)
+  - Used to run the workflows
+- [inutano/cwl-metrics](https://github.com/inutano/cwl-metrics)
+  - Used to collect runtime metrics of the workflows
+- [pitagora-network/pitagora-cwl](https://github.com/pitagora-network/pitagora-cwl)
+  - RNA-Seq workflows used for the benchmark
+
 ## Manuscript
 
 - PrePrint
