@@ -23,6 +23,8 @@ This repository contains:
 
 - PrePrint
   - Accumulating computational resource usage of genomic data analysis workflow to optimize cloud computing instance selection. Tazro Ohta, Tomoya Tanjo, Osamu Ogasawara, bioRxiv 456756; doi: https://doi.org/10.1101/456756
+- Journal
+  - Ohta, T., Tanjo, T., & Ogasawara, O. (2019). Accumulating computational resource usage of genomic data analysis workflow to optimize cloud computing instance selection. GigaScience, 8(4). https://doi.org/10.1093/gigascience/giz052
 
 ## Methods
 
